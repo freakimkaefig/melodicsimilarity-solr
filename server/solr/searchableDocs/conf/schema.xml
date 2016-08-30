@@ -139,7 +139,23 @@
   <field indexed="true" name="lastChangedDate" stored="true" type="date"></field>
   <field indexed="true" name="lastChangedPerson" stored="true" type="text_general" default="Not set"></field>
 
-  
+  <field name="signatureFacet" type="string" indexed="true" stored="false"/>
+  <copyField source="signature" dest="signatureFacet"/>
+  <field name="originFacet" type="string" indexed="true" stored="false"/>
+  <copyField source="origin" dest="originFacet"/>
+  <field name="titleFacet" type="string" indexed="true" stored="false"/>
+  <copyField source="title" dest="titleFacet"/>
+  <field name="typeFacet" type="string" indexed="true" stored="false"/>
+  <copyField source="type" dest="typeFacet"/>
+  <field name="singPlaceFacet" type="string" indexed="true" stored="false"/>
+  <copyField source="singPlace" dest="singPlaceFacet"/>
+  <field name="landscapeArchiveFacet" type="string" indexed="true" stored="false"/>
+  <copyField source="landscapeArchive" dest="landscapeArchiveFacet"/>
+  <field name="recorderFacet" type="string" indexed="true" stored="false"/>
+  <copyField source="recorder" dest="recorderFacet"/>
+  <field name="archiveFacet" type="string" indexed="true" stored="false"/>
+  <copyField source="archive" dest="archiveFacet"/>
+
   <dynamicField name="vPos_*" stored="true" type="int"/>
   <dynamicField name="hPos_*" stored="true" type="int"/>
   <dynamicField name="height_*" stored="true" type="int"/>

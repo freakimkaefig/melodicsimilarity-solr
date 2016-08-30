@@ -1,6 +1,6 @@
+dist/
+docs/
 example/
 contrib/
 
 server/logs/
-server/solr/zoo_data/
-server/solr-webapp/
