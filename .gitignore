@@ -1,6 +1,10 @@
+.idea
+
 dist/
 docs/
 example/
 contrib/
 
 server/logs/
+
+*.pid
